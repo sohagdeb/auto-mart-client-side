@@ -11,7 +11,8 @@ const Purchases = () => {
             .then(data => setPurchases(data))
     }, [])
     const handleDelete = id => {
-        console.log(id);
+        // console.log(id);
+
         const url = `http://localhost:5000/cart/${id}`;
         fetch(url, {
             method: 'DELETE'
