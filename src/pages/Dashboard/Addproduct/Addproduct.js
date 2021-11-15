@@ -6,7 +6,7 @@ import './Addproduct.css';
 const Addproduct = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        axios.post('http://localhost:5000/addservice', data)
+        axios.post('https://enigmatic-garden-06051.herokuapp.com/addservice', data)
             .then(res => {
 
                 if (res.data.insertedId) {

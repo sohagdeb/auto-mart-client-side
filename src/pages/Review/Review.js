@@ -10,7 +10,7 @@ const Review = () => {
 
 
     const onSubmit = data => {
-        axios.post('http://localhost:5000/review', data)
+        axios.post('https://enigmatic-garden-06051.herokuapp.com/review', data)
             .then(res => {
 
                 if (res.data.insertedId) {

@@ -5,14 +5,14 @@ import Manage from '../Manage/Manage';
 const ManageOrders = () => {
     const [orders, setOrders] = useState([]);
     useEffect(() => {
-        const url = `http://localhost:5000/orders`;
+        const url = `https://enigmatic-garden-06051.herokuapp.com/orders`;
         fetch(url)
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])
     const handleDelete = id => {
         console.log(id);
-        const url = `http://localhost:5000/orders/${id}`;
+        const url = `https://enigmatic-garden-06051.herokuapp.com/orders/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

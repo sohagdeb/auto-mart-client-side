@@ -5,7 +5,7 @@ import Purchase from '../Purchase/Purchase';
 const Purchases = () => {
     const [purchases, setPurchases] = useState([]);
     useEffect(() => {
-        const url = 'http://localhost:5000/cart'
+        const url = 'https://enigmatic-garden-06051.herokuapp.com/cart'
         fetch(url)
             .then(res => res.json())
             .then(data => setPurchases(data))
@@ -13,7 +13,7 @@ const Purchases = () => {
     const handleDelete = id => {
         // console.log(id);
 
-        const url = `http://localhost:5000/cart/${id}`;
+        const url = `https://enigmatic-garden-06051.herokuapp.com/cart/${id}`;
         fetch(url, {
             method: 'DELETE'
         })
