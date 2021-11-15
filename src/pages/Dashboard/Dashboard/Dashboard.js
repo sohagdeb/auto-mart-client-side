@@ -83,7 +83,8 @@ function Dashboard(props) {
                 >
                     <Toolbar>
                         <IconButton
-                            color="inherit"
+                            className='bg-light'
+                            // color="error"
                             aria-label="open drawer"
                             edge="start"
                             onClick={handleDrawerToggle}

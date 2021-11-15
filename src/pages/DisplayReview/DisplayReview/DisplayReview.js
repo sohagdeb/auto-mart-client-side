@@ -3,7 +3,7 @@ import React from 'react';
 
 const DisplayReview = (props) => {
     const { name, email, review, rate } = props.review;
-    console.log(props.review);
+    // console.log(props.review);
     return (
         <div className="col-lg-4 col-12">
             <div className="p-3 border bg-light">

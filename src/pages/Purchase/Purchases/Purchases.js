@@ -18,7 +18,7 @@ const Purchases = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+                // console.log(data);
                 if (data.deletedCount) {
                     alert('Are you sure to delete');
                     const remaining = purchases.filter(service => service._id !== id);

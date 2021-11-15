@@ -1,4 +1,3 @@
-import { Rating } from '@mui/material';
 import React from 'react';
 import Brands from '../../Brands/Brands';
 import DisplayReviews from '../../DisplayReview/DisplayReviews/DisplayReviews';

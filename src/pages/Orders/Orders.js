@@ -10,6 +10,7 @@ const Orders = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const { user } = useFirebase();
 
+
     const onSubmit = data => {
         axios.post('http://localhost:5000/orders', data)
             .then(res => {
